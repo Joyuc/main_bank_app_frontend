@@ -28,6 +28,11 @@ jobs:
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         aws-region: us-east-1
 
+    - name: Cleanup Docker space
+      run: |
+        docker system prune -af || true
+        docker volume prune -f || true
+
 
     - name: Build container image
       run: docker build -t bank-app-frontend:latest .

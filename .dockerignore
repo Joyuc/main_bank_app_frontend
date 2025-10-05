@@ -1,1 +1,5 @@
-/deployment
+node_modules
+.git
+*.log
+*.png
+*.jpg
