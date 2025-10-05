@@ -10,7 +10,7 @@ COPY package*.json ./
 # Use npm registry and clear cache
 RUN npm config set registry https://registry.npmjs.org/ && npm cache clean --force
 
-# Installing dependencies (includes react-scripts from package.json)
+# Install dependencies (includes react-scripts from package.json)
 RUN npm install
 
 # Copy the rest of your app
