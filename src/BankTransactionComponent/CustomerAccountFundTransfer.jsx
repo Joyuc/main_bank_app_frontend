@@ -24,7 +24,7 @@ const CustomerAccountFundTransfer = () => {
   };
 
   const saveAccount = (e) => {
-    fetch("https://bankapi.cloudwitches.online/api/bank/transaction/account/transfer", {
+    fetch("https://bankapi.jay4tech.online/api/bank/transaction/account/transfer", {
       method: "POST",
       headers: {
         Accept: "application/json",
